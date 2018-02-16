@@ -1,0 +1,47 @@
+{
+  "name": "http-gone-wrong",
+  "version": "0.1.0",
+  "description": "Collection of extendible easy to use HTTP errors inspired by Restify-errors",
+  "main": "./dist/errors.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "tslint 'src/errors.ts'",
+    "prettier": "prettier --write --no-semi --single-quote 'src/*.ts'",
+    "prettier:check": "prettier --list-different --no-semi --single-quote 'src/*.ts'",
+    "build": "tsc",
+    "prepush": "yarn test && yarn lint && yarn prettier:check"
+  },
+  "keywords": [
+    "HTTP",
+    "errors",
+    "errors",
+    "easy",
+    "express",
+    "rest"
+  ],
+  "author": "Hidde Stokvis <hidde@neverhide.nl>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^22.1.2",
+    "husky": "^0.14.3",
+    "prettier": "^1.10.2",
+    "ts-jest": "^22.0.4",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.8.0",
+    "typescript": "^2.7.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
