@@ -288,166 +288,166 @@ export default class HTTPGoneWrong implements IndexSignature {
     }
   }
 
-  public BadRequestError(message?: string, extendError?: IError): IError {
+  public badRequestError(message?: string, extendError?: IError): IError {
     return this.returnError(400, message, extendError)
   }
-  public UnauthorizedError(message?: string, extendError?: IError): IError {
+  public unauthorizedError(message?: string, extendError?: IError): IError {
     return this.returnError(401, message, extendError)
   }
-  public PaymentRequiredError(message?: string, extendError?: IError): IError {
+  public paymentRequiredError(message?: string, extendError?: IError): IError {
     return this.returnError(402, message, extendError)
   }
-  public ForbiddenError(message?: string, extendError?: IError): IError {
+  public forbiddenError(message?: string, extendError?: IError): IError {
     return this.returnError(403, message, extendError)
   }
-  public NotFoundError(message?: string, extendError?: IError): IError {
+  public notFoundError(message?: string, extendError?: IError): IError {
     return this.returnError(404, message, extendError)
   }
-  public MethodNotAllowedError(message?: string, extendError?: IError): IError {
+  public methodNotAllowedError(message?: string, extendError?: IError): IError {
     return this.returnError(405, message, extendError)
   }
-  public NotAcceptableError(message?: string, extendError?: IError): IError {
+  public notAcceptableError(message?: string, extendError?: IError): IError {
     return this.returnError(406, message, extendError)
   }
-  public ProxyAuthenticationRequiredError(
+  public proxyAuthenticationRequiredError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(407, message, extendError)
   }
-  public RequestTimeoutError(message?: string, extendError?: IError): IError {
+  public requestTimeoutError(message?: string, extendError?: IError): IError {
     return this.returnError(408, message, extendError)
   }
-  public ConflictError(message?: string, extendError?: IError): IError {
+  public conflictError(message?: string, extendError?: IError): IError {
     return this.returnError(409, message, extendError)
   }
-  public GoneError(message?: string, extendError?: IError): IError {
+  public goneError(message?: string, extendError?: IError): IError {
     return this.returnError(410, message, extendError)
   }
-  public LengthRequiredError(message?: string, extendError?: IError): IError {
+  public lengthRequiredError(message?: string, extendError?: IError): IError {
     return this.returnError(411, message, extendError)
   }
-  public PreconditionFailedError(
+  public preconditionFailedError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(412, message, extendError)
   }
-  public RequestEntityTooLargeError(
+  public requestEntityTooLargeError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(413, message, extendError)
   }
-  public RequestUriTooLargeError(
+  public requestUriTooLargeError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(414, message, extendError)
   }
-  public UnsupportedMediaTypeError(
+  public unsupportedMediaTypeError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(415, message, extendError)
   }
-  public RangeNotSatisfiableError(
+  public rangeNotSatisfiableError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(416, message, extendError)
   }
-  public ExpectationFailedError(
+  public expectationFailedError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(417, message, extendError)
   }
-  public ImATeapotError(message?: string, extendError?: IError): IError {
+  public imATeapotError(message?: string, extendError?: IError): IError {
     return this.returnError(418, message, extendError)
   }
-  public UnprocessableEntityError(
+  public unprocessableEntityError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(422, message, extendError)
   }
-  public LockedError(message?: string, extendError?: IError): IError {
+  public lockedError(message?: string, extendError?: IError): IError {
     return this.returnError(423, message, extendError)
   }
-  public FailedDependencyError(message?: string, extendError?: IError): IError {
+  public failedDependencyError(message?: string, extendError?: IError): IError {
     return this.returnError(424, message, extendError)
   }
-  public UnorderedCollectionError(
+  public unorderedCollectionError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(425, message, extendError)
   }
-  public UpgradeRequiredError(message?: string, extendError?: IError): IError {
+  public upgradeRequiredError(message?: string, extendError?: IError): IError {
     return this.returnError(426, message, extendError)
   }
-  public PreconditionRequiredError(
+  public preconditionRequiredError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(428, message, extendError)
   }
-  public TooManyRequestsError(message?: string, extendError?: IError): IError {
+  public tooManyRequestsError(message?: string, extendError?: IError): IError {
     return this.returnError(429, message, extendError)
   }
-  public RequestHeaderFieldsTooLargeError(
+  public requestHeaderFieldsTooLargeError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(431, message, extendError)
   }
-  public InternalServerError(message?: string, extendError?: IError): IError {
+  public internalServerError(message?: string, extendError?: IError): IError {
     return this.returnError(500, message, extendError)
   }
-  public NotImplementedError(message?: string, extendError?: IError): IError {
+  public notImplementedError(message?: string, extendError?: IError): IError {
     return this.returnError(501, message, extendError)
   }
-  public BadGatewayError(message?: string, extendError?: IError): IError {
+  public badGatewayError(message?: string, extendError?: IError): IError {
     return this.returnError(502, message, extendError)
   }
-  public ServiceUnavailableError(
+  public serviceUnavailableError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(503, message, extendError)
   }
-  public GatewayTimeoutError(message?: string, extendError?: IError): IError {
+  public gatewayTimeoutError(message?: string, extendError?: IError): IError {
     return this.returnError(504, message, extendError)
   }
-  public HttpVersionNotSupportedError(
+  public httpVersionNotSupportedError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(505, message, extendError)
   }
-  public VariantAlsoNegotiatesError(
+  public variantAlsoNegotiatesError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(506, message, extendError)
   }
-  public InsufficientStorageError(
+  public insufficientStorageError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(507, message, extendError)
   }
-  public BandwidthLimitExceededError(
+  public bandwidthLimitExceededError(
     message?: string,
     extendError?: IError
   ): IError {
     return this.returnError(509, message, extendError)
   }
-  public NotExtendedError(message?: string, extendError?: IError): IError {
+  public notExtendedError(message?: string, extendError?: IError): IError {
     return this.returnError(510, message, extendError)
   }
-  public NetworkAuthenticationRequiredError(
+  public networkAuthenticationRequiredError(
     message?: string,
     extendError?: IError
   ): IError {

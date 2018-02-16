@@ -16,14 +16,14 @@ or
 import errors from 'http-gone-wrong'
 
 // basic
-throw new errors().BadRequestError()
+throw new errors().badRequestError()
 
 // custom message
-throw new errors().BadRequestError('Oops .. this request seems invalid')
+throw new errors().badRequestError('Oops .. this request seems invalid')
 
 // Extend an existing error
 const anExistingError = new Error(`test`)
-throw new errors().BadRequestError(null, anExistingError)
+throw new errors().badRequestError(null, anExistingError)
 ```
 
 ## Error functions

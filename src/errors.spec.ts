@@ -18,7 +18,10 @@ describe('Shared: Error Class', () => {
       })
       it('Should have a function throwing the same error', () => {
         const eClass = new errors()
-        const e = (eClass[error.name] as ErrorFunction)()
+        const name: string = `${error.name[0].toLowerCase()}${error.name.substr(
+          1
+        )}`
+        const e = (eClass[name] as ErrorFunction)()
         expect(e instanceof Error).toBeTruthy()
         expect(e.statusCode).toBe(error.statusCode)
         expect(e.message).toBe(error.defaultMessage)
@@ -30,7 +33,10 @@ describe('Shared: Error Class', () => {
         const prevError: IError = new Error(errorMessage)
         prevError.statusCode = 200
         const eClass = new errors()
-        const e = (eClass[error.name] as ErrorFunction)(null, prevError)
+        const name: string = `${error.name[0].toLowerCase()}${error.name.substr(
+          1
+        )}`
+        const e = (eClass[name] as ErrorFunction)(null, prevError)
         expect(e instanceof Error).toBeTruthy()
         expect(e.statusCode).toBe(error.statusCode)
         expect(e.message).toBe(errorMessage || error.defaultMessage)
