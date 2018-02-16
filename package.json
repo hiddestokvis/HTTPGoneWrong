@@ -1,6 +1,6 @@
 {
   "name": "http-gone-wrong",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Collection of extendible easy to use HTTP errors inspired by Restify-errors",
   "main": "./dist/errors.js",
   "scripts": {
