@@ -4,11 +4,11 @@ Easy to use and extendible HTTP errors for when your HTTP goes wrong. Inspired b
 
 ## Install
 
-```yarn add HTTPGoneWrong```
+```yarn add http-gone-wrong```
 
 or
 
-```npm install HTTPGoneWrong```
+```npm install http-gone-wrong```
 
 ## Usage
 
