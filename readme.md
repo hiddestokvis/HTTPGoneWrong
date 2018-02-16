@@ -1,6 +1,6 @@
 # HTTPGoneWrong
 
-Easy to use and extendible HTTP errors for when your HTTP goes wrong. Inspired by the [restify errors](https://restify.com) but with my take on it.
+Easy to use and extendible HTTP errors for when your HTTP goes wrong. Inspired by the [restify errors](http://restify.com) but with my take on it.
 
 ## Install
 
@@ -28,6 +28,7 @@ throw new errors().BadRequestError(null, anExistingError)
 
 ## Error functions
 
+```
 400: BadRequestError
 401: UnauthorizedError
 402: PaymentRequiredError
@@ -66,3 +67,4 @@ throw new errors().BadRequestError(null, anExistingError)
 509: BandwidthLimitExceededError
 510: NotExtendedError
 511: NetworkAuthenticationRequiredError
+```
