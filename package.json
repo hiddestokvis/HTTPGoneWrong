@@ -9,7 +9,8 @@
     "prettier": "prettier --write --no-semi --single-quote 'src/*.ts'",
     "prettier:check": "prettier --list-different --no-semi --single-quote 'src/*.ts'",
     "build": "tsc",
-    "prepush": "yarn test && yarn lint && yarn prettier:check"
+    "prepush": "yarn test && yarn lint && yarn prettier:check",
+    "prepublishOnly": "yarn prepush && yarn build"
   },
   "keywords": [
     "HTTP",
