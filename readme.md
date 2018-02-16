@@ -13,7 +13,7 @@ or
 ## Usage
 
 ```javascript
-import errors from 'HTTPGoneWrong'
+import errors from 'http-gone-wrong'
 
 // basic
 throw new errors().BadRequestError()
