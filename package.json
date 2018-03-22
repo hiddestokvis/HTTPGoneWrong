@@ -1,6 +1,6 @@
 {
   "name": "http-gone-wrong",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Collection of extendible easy to use HTTP errors inspired by Restify-errors",
   "main": "./dist/errors.js",
   "typings": "./dist/errors.d.ts",
@@ -10,9 +10,8 @@
     "prettier": "prettier --write --no-semi --single-quote 'src/*.ts'",
     "prettier:check": "prettier --list-different --no-semi --single-quote 'src/*.ts'",
     "build": "tsc",
-    "declaration": "./node_modules/dtsmake/bin/dtsmake --src ./dist/errors.js -n http-gone-wrong --export",
     "prepush": "yarn test && yarn lint && yarn prettier:check",
-    "prepublishOnly": "yarn prepush && yarn build && yarn declaration"
+    "prepublishOnly": "yarn prepush && yarn build"
   },
   "keywords": [
     "HTTP",
