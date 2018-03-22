@@ -10,6 +10,7 @@
   },
   "exclude": [
     "node_modules",
-    "src/errors.spec.ts"
+    "src/errors.spec.ts",
+    "dist/*"
   ]
 }

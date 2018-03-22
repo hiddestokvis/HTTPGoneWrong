@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/hiddestokvis/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js declaration
+  /Users/hiddestokvis/.nvm/versions/node/v8.9.4/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js build
 
 PATH: 
-  /Users/hiddestokvis/.nvm/versions/node/v8.9.4/bin:~/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+  /Users/hiddestokvis/.nvm/versions/node/v8.9.4/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/hiddestokvis/Documents/4_werk/github/http-gone-wrong/node_modules/.bin:/Users/hiddestokvis/.nvm/versions/node/v8.9.4/bin:~/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 Yarn version: 
   1.5.1
@@ -16,7 +16,7 @@ Platform:
 npm manifest: 
   {
     "name": "http-gone-wrong",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Collection of extendible easy to use HTTP errors inspired by Restify-errors",
     "main": "./dist/errors.js",
     "scripts": {
@@ -25,9 +25,9 @@ npm manifest:
       "prettier": "prettier --write --no-semi --single-quote 'src/*.ts'",
       "prettier:check": "prettier --list-different --no-semi --single-quote 'src/*.ts'",
       "build": "tsc",
-      "declaration": "cd ./dist && ./node_modules/dtsmake/bin/dtsmake ./error.js",
+      "declaration": "./node_modules/dtsmake/bin/dtsmake --src ./dist/errors.js -n http-gone-wrong",
       "prepush": "yarn test && yarn lint && yarn prettier:check",
-      "prepublishOnly": "yarn prepush && yarn build"
+      "prepublishOnly": "yarn prepush && yarn build && yarn declaration"
     },
     "keywords": [
       "HTTP",
@@ -2449,9 +2449,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 127
+  Exit code: 2
   Command: sh
-  Arguments: -c cd ./dist && ./node_modules/dtsmake/bin/dtsmake ./error.js
+  Arguments: -c tsc
   Directory: /Users/hiddestokvis/Documents/4_werk/github/http-gone-wrong
   Output:
   
